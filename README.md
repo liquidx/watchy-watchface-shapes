@@ -1,4 +1,4 @@
-Custom watchface for [Watchy](watchy.sqfmi.com).
+Custom watchface for [Watchy](https://watchy.sqfmi.com).
 
 Customize the settings in the settings.h file through npm run build.
 
