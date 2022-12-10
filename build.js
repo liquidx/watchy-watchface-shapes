@@ -7,7 +7,7 @@ const main = () => {
     .version('0.0.1')
     .option('-c, --city <number>', 'Open Weather City ID', 1850147) // Tokyo
     .option('-t, --timezone-offset <number>', 'GMT offset in secs', 3600 * 9) // Tokyo
-    .option('-o, --output <filename>', 'Settings file', 'src/settings.h')
+    .option('-o, --output <filename>', 'Settings file', 'ShapesFace/settings.h')
 
 
   program.parse();
@@ -20,7 +20,7 @@ const main = () => {
 #define SETTINGS_H
 
 watchySettings settings{
-  .cityID = ${city},
+  .cityID = "${city}",
   .weatherAPIKey = "f058fe1cad2afe8e2ddc5d063a64cecb",
   .weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=",
   .weatherUnit = "metric",
@@ -28,6 +28,7 @@ watchySettings settings{
   .weatherUpdateInterval = 30,
   .ntpServer = "pool.ntp.org",
   .gmtOffset = ${timezoneOffset},
+  .vibrateOClock = true,
 };
 #endif
   `
