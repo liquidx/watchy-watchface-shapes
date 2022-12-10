@@ -1,0 +1,14 @@
+{
+  "name": "watchy-watchface-shapes",
+  "version": "1.0.0",
+  "description": "Watch Faces",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Alastair Tse <alastair@liquidx.net",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.1"
+  }
+}
